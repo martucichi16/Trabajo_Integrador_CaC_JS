@@ -1,0 +1,321 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: #454647;
+    padding: 20px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h3 {
+    color:white
+}
+
+#logo {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo span {
+    color:rgba(223, 183, 3, 0.952)
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #949393
+}
+
+nav a:hover {
+    color: white;
+}
+
+#mobile_nav {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #lg_nav {
+        display: none;
+    }
+
+    #mobile_nav {
+        display: block;
+    }
+
+    nav li {
+        text-align: left;
+    }
+
+    .navbar, .offcanvas-end {
+        background-color: #454647;
+    }
+
+    #mobile_nav a{
+        color: #949393;
+    }
+
+    #mobile_nav a:hover {
+        color: white
+    }
+}
+/* ------------------------------------------------------------------------------------------------------ */
+#intro {
+    background-image: url("../img/festival.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 450px;
+    margin-bottom: 30px;
+    padding: 350px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#intro h1 {
+    color:white
+}
+
+#intro p {
+    color:white;
+    width: 40%;
+    text-align: right;
+    float: right;
+}
+
+#intro b {
+    color:darkcyan;
+}
+
+#intro div {
+    margin: 20px;
+}
+
+#button1 {
+    color:white;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+}
+
+#button1:hover {
+    background-color: white;
+    color:purple;
+    border-color: purple;
+}
+
+#button2 {
+    background-color: purple;
+    color:white;
+    border-color: purple;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px
+}
+
+#button2:hover {
+    background-color: rgba(85, 5, 85, 0.719);
+    color:white;
+    border-color: rgba(85, 5, 85, 0.719);
+}
+
+@media screen and (max-width:700px) {
+    #intro {
+        padding: 30% 4%;
+        height: auto;
+    }
+
+    #intro p {
+        color:white;
+        width: 50%;
+    }
+
+    #intro div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#top h3 {
+    margin: 8px;
+    text-align: center;
+}
+
+#top h1 {
+    margin-bottom: 0 0 20px 0;
+    letter-spacing: 4px;
+    color: purple;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    z-index: 0;
+    padding: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+}
+
+.music_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.music_style span {
+    margin: 10px 4px 0 4px;
+}
+
+.musico h4 {
+    margin: 5px 10px 10px 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#lugar_fecha {
+    background-color: #5e5e5e;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#info_logistica {
+    padding: 10px;
+}
+
+#lugar_fecha p, #lugar_fecha h1 {
+    color: white;
+    padding: 2px 15px;
+}
+
+#lugar_fecha button {
+    margin: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#participa {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#participa .row {
+    justify-content: center;
+}
+
+#participa h3 {
+    margin: 30px 8px 8px 8px;
+}
+
+#participa h1 {
+    margin: 0;
+    letter-spacing: 4px;
+    color: purple;
+}
+
+#participa span {
+    font-style: italic;
+}
+
+#participa input {
+    margin: 20px 0;
+}
+
+textarea {
+    height: 200px;
+    margin: 0 0 20px 0;
+}
+
+#participa button{
+    padding: 5px;
+    background-color: rgb(92, 179, 92);
+    color:white;
+    border: 0px;
+}
+
+#participa button:hover{
+    background-color: rgb(46, 133, 46);
+    color:white;
+}
+
+@media screen and (max-width:700px) {
+    #nombre_apellido {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+footer {
+    background-color: #454647;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    justify-content: center;
+}
+
+footer li {
+    text-align: center;
+    list-style: none;
+}
+
+footer a {
+    color: #949393;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        margin: 10px 0 0 0;
+        padding: 5px;
+        position: static;
+    }
+    
+    footer li {
+        text-align: left;
+    }
+}

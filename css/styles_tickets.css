@@ -1,0 +1,214 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+header {
+    background-color: #454647;
+    padding: 20px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h3 {
+    color:white
+}
+
+#logo {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo span {
+    color:rgba(223, 183, 3, 0.952)
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #949393
+}
+
+nav a:hover {
+    color: white;
+}
+
+#mobile_nav {
+    display: none;
+}
+
+.linkTickets {
+    color:white;
+}
+
+@media screen and (max-width:700px) {
+    #lg_nav {
+        display: none;
+    }
+
+    #mobile_nav {
+        display: block;
+    }
+
+    nav li {
+        text-align: left;
+    }
+
+    .navbar, .offcanvas-end {
+        background-color: #454647;
+    }
+
+    #mobile_nav a{
+        color: #949393;
+    }
+
+    #mobile_nav a:hover {
+        color: white
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#descuentos {
+    margin: 30px;
+}
+
+#descuentos .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+
+.card {
+    text-align: center;
+    border-radius: 0;
+}
+
+#card1 {
+    border-color: lightseagreen;
+}
+
+#card2 {
+    border-color: red;
+}
+
+#card3 {
+    border-color: yellow;
+}
+
+.aclaracion {
+    color: rgb(165, 157, 157);
+    font-size: small;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#formulario {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+#formulario .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+#formulario div {
+    margin: 0;
+    padding: 0;
+}
+
+#formulario input {
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+#formulario {
+    margin: 50px 0;
+}
+
+#formulario p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+#alert {
+    text-align: left;
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+#total {
+    color: rgb(2, 2, 165);
+    font-size: larger;
+}
+
+#formulario button {
+    background-color: rgb(130, 223, 43);
+    color: white;
+    text-align:center;
+    font-size: large;
+    padding: 10px;
+    border-color: white;
+    border-radius: 3%;
+    border-style: solid
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+footer {
+    background-color: #454647;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    justify-content: center;
+}
+
+footer li {
+    text-align: center;
+    list-style: none;
+}
+
+footer a {
+    color: #949393;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        margin: 10px 0 0 0;
+        padding: 5px;
+        position: static;
+    }
+    
+    footer li {
+        text-align: left;
+    }
+}
