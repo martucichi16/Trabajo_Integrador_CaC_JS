@@ -63,6 +63,7 @@ nav a:hover {
 
     #mobile_nav {
         display: block;
+        width: 100%;
     }
 
     nav li {
@@ -116,6 +117,12 @@ nav a:hover {
     font-size: small;
 }
 
+@media screen and (max-width:700px) {
+    .card {
+        margin: 10px;
+    }
+}
+
 /* ------------------------------------------------------------------------------------------------------ */
 #formulario {
     text-align: center;
@@ -167,6 +174,17 @@ nav a:hover {
     border-radius: 3%;
     border-style: solid
 }
+
+@media screen and (max-width:700px) {
+    #formulario {
+        margin: 0;
+    }
+
+    #formulario button {
+        width: 100%;
+    }
+}
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 footer {
