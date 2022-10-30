@@ -118,6 +118,10 @@ nav a:hover {
 }
 
 @media screen and (max-width:700px) {
+    #descuentos {
+        margin-left: 0;
+    }
+
     .card {
         margin: 10px;
     }
